@@ -1,3 +1,7 @@
+//JS作用域
+
+
+//JS异步执行
 //1.异步回调
 function f1(callback) {
     setTimeout(function () {
@@ -23,3 +27,14 @@ function f1() {
 }
 
 //3.Promise
+
+
+
+//4.js事件循环机制
+for (var i = 0;i < 5;i++) {
+    setTimeout(function () {
+        console.log(i)
+    },1000);
+}
+//result: 5个5
+
