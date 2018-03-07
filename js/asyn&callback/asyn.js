@@ -1,6 +1,3 @@
-//JS作用域
-
-
 //JS异步执行
 //1.异步回调
 function f1(callback) {
@@ -27,8 +24,17 @@ function f1() {
 }
 
 //3.Promise
-
-
+const mypromise = new Promise(function (resolve, reject) {
+    console.log('Do sth with a long time');
+    let state = 'success'
+    resolve(state)
+})
+mypromise.then(function(state) {
+    console.log(state)
+});
+console.log("我路过打个酱油")
+//Promise对象新建后就会立即执行
+//result：Do sth with a long time；我路过打个酱油；success
 
 //4.js事件循环机制
 for (var i = 0;i < 5;i++) {
@@ -36,5 +42,6 @@ for (var i = 0;i < 5;i++) {
         console.log(i)
     },1000);
 }
-//result: 5个5
+console.log(i);
+//result: 立即输出5,一秒后输出5个5
 

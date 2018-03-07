@@ -44,7 +44,7 @@ console.log(i)  //result：5 i是全局变量
 
     }
 })()
-console.log(i) //result: undifined
+console.log(i) //result: undifined i被函数作用域锁住了
 
 
 

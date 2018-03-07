@@ -5,7 +5,7 @@
 3.js this的指向性问题 （箭头函数）
 4.js中 bind和apply的理解 怎么用 也是属于this指向问题
 5.js继承、原型链问题 ！！
-js实现拖拽
+6.js实现拖拽
 
 http的相关基础知识
 socket的相关知识
