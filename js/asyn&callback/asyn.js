@@ -36,7 +36,7 @@ console.log("我路过打个酱油")
 //Promise对象新建后就会立即执行
 //result：Do sth with a long time；我路过打个酱油；success
 
-//4.js事件循环机制
+//4.js事件循环机制 
 for (var i = 0;i < 5;i++) {
     setTimeout(function () {
         console.log(i)

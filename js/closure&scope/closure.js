@@ -11,14 +11,15 @@ var closure = foo();
 closure();
 //result: 2;add访问到了foo函数内的局部变量
 
-//循环中创建闭包
-function loop() {
-    for(var i =0;i < 5;i++) {
-        (function (index) {
-            console.log(i)
-        }(i))
-    }
+//循环中创建闭包 实现打印0,1,2,3,4
+for (var i = 0;i < 5;i++) {
+    setTimeout(
+        (function (i) {
+            return function() { console.log(i) }
+        })(i)
+    ,1000);
 }
+//result: 1s后打印0-4
 
 //二、变量提升
 x =5;
