@@ -91,7 +91,12 @@ for (let i = 0; i < 3; i++) {
 }
 //result:3次abc; 循环变量的那部分是一个父作用域，而循环体内部是一个单独的子作用域。
 
+const foo = {}
 
+foo.name = "cc"
+console.log(foo.name) //result: "cc";
+
+foo = {} //报错，无法改变指针的指向
 
 
 

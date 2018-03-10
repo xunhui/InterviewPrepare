@@ -27,7 +27,12 @@ JavaScript引擎线程，GUI渲染线程，浏览器事件触发线程。
 2.事件监听
 
 3.ES6 Promise
+所谓Promise，简单说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果。
 
+Promise是异步编程的一种解决方案，它有三种状态，分别是pending-进行中、resolved-已完成、rejected-已失败
+当Promise的状态又pending转变为resolved或rejected时，会执行相应的方法，并且状态一旦改变，就无法再次改变状态，这也是它名字promise-承诺的由来
+
+4.ES6 asyn/await
 
 
 

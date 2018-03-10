@@ -1,7 +1,7 @@
 //情况1：函数中使用了this，但是没有被上一级对象所调用，则this指向window对象 strict模式下this为undefined
 function test1() {
 	var name = 'cc';
-	console.log(this.name) 
+	console.log(this.name)
 }
 test1();//undefined (相当于window.test1(),方法由window对象执行调用)
 
@@ -39,3 +39,27 @@ var test4 = {
 
 var obj = test4.b.getA
 obj() //undefined (obj执行的时候是由window对象调用，故this.a为window.a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
