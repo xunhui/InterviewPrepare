@@ -1,7 +1,15 @@
-this的指向在函数定义的时候是确定不了的，只有函数执行的时候才能确定this到底指向谁，
+1.this的指向在函数定义的时候是确定不了的，只有函数执行的时候才能确定this到底指向谁，
 实际上this的最终指向的是那个调用它的对象
 
-call,bind,apply
+2.call,bind,apply:改变函数执行的上下文，即改变函数运行时的this指向
+
+function.call(this, arg1, arg2...)
+如果这个函数处于非严格模式下，则指定为null和undefined的this值会自动指向全局对象(浏览器中就是window对象)
+
+
+
+
+
 
 
 
