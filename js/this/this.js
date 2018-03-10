@@ -68,8 +68,27 @@ var another = function () {
 setTimeout(another, 1000) //10 
 
 
+//四、ES6箭头函数
+let obj = {
+	name: 'aaa',
+	showName1: () => {
+		console.log(this.name)
+	},
+	showName2: function () {
+		console.log(this.name)
+	}
+}
+obj.showName1() // undefined
+obj.showName2() // aaa
 
 
+function asd () {
+	return () => {
+		console.log(this, this.id)
+	}
+}
+asd()() // window, undefined
+asd.call({id: 123})() // {id: 123} 123
 
 
 

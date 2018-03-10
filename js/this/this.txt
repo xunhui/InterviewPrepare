@@ -3,10 +3,18 @@
 
 2.call,bind,apply:改变函数执行的上下文，即改变函数运行时的this指向
 
-function.call(this, arg1, arg2...)
+function.call(this, arg1, arg2, ...)
 如果这个函数处于非严格模式下，则指定为null和undefined的this值会自动指向全局对象(浏览器中就是window对象)
 
+function.apply(this,[arg1, arg2, ...]) apply和call的区别仅仅是第二个参数的形式区别，apply第二个参数为数组
 
+function,bind(this, arg1, arg2, ...) apply和call改变函数的this上下文之后便立即执行该函数，属于IIEF，而
+bind则是返回改变上下文后的函数拷贝，并不会立即执行
+
+3.箭头函数
+普通函数的this在执行时才确定指向，而箭头函数在定义时就确定了指向
+
+call,bind,apply也无法改变箭头函数this的指向，定义时已经确定。
 
 
 
