@@ -1,0 +1,16 @@
+一.css选择器
+1.div p {} 后代选择器:选择div元素后代的所有p元素
+
+2.div > p {} 子元素选择器（Child selectors）:只能选择作为某元素子元素的元素。
+
+3.div + p {} 相邻兄弟选择器:选择紧接在另一元素后的元素，且二者有相同父元素。
+
+4.div:first-child 伪类(:hover,:active...) (易弄错) 选择作为任何元素的第一个子div元素
+(即各个第一子元素中为div的那个元素) 而不是div的第一个子元素
+同理 div:last-child 选择属于其父元素的最后一个子div元素
+
+5.div:nth-child(n) 匹配属于其父元素的第 N 个子div元素 
+nth-child(odd) 匹配第奇数个子元素 nth-child(even) 偶数
+
+6.div:before div:after 都属于伪元素，注意和伪类区分开
+
